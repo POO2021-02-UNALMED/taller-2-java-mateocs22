@@ -9,21 +9,21 @@ public class Auto {
 	int registro;
 	static int cantidadCreados; 
 	
-	int cantidadAsiento() {
+	int cantidadAsientos() {
 		int n = 0;
 		for (int i = 0; i < asientos.length; i++) {
 			if (asientos[i] != null) {
-				n= n++;
+				n++;
 			}
 		}
 		return n;		
 	}
 	
-	String verificarIdentidad() {
+	String verificarIntegridad() {
 		String rc= "Auto original";
 		String r= "Las piezas no son originales";
 		for (int i = 0; i < asientos.length; i++) {
-			if (asientos[i].registro != this.registro && asientos[i] != null ) {
+			if (asientos[i] != null && asientos[i].registro != this.registro ) {
 				return  r;
 			}
 			}
