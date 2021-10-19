@@ -10,7 +10,7 @@ public class Motor {
 	}
 	
 	void asignarTipo(String tipo) {
-		if (tipo == "electrico" || tipo == "gasolina") {
+		if (tipo == "electrico" || tipo == "normal") {
 			this.tipo = tipo;
 		}
 	}

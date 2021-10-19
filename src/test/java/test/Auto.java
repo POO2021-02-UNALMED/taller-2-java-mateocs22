@@ -12,7 +12,7 @@ public class Auto {
 	int cantidadAsiento() {
 		int n = 0;
 		for (int i = 0; i < asientos.length; i++) {
-			if (asientos[i].getClass() == Asiento.class) {
+			if (asientos[i] != null) {
 				n= n++;
 			}
 		}
@@ -23,7 +23,7 @@ public class Auto {
 		String rc= "Auto original";
 		String r= "Las piezas no son originales";
 		for (int i = 0; i < asientos.length; i++) {
-			if (asientos[i].registro != this.registro) {
+			if (asientos[i].registro != this.registro && asientos[i] != null ) {
 				return  r;
 			}
 			}
